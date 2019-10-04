@@ -1,0 +1,17 @@
+.header__icon {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .header__icon {
+    display: block;
+  }
+
+  .header__list li {
+    display: none;
+  }
+
+  .header__list-show li {
+    display: block;
+  }
+}
