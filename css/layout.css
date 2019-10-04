@@ -1,10 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__icon {
   display: none;
 }
 
+.fa {
+  display: none;
+}
+
 @media (max-width: 640px) {
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .header__icon {
     display: block;
+    margin-left: 1rem;
+  }
+
+  .header__list {
+    display: flex;
+    flex-direction: column;
   }
 
   .header__list li {
